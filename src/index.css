@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@700&display=swap');
+
+
+/* EFEITO DIGITAL (TYPING ANIMATION) */
+.digital-type {
+  display: inline-block;
+  overflow: hidden; /* Garante que o texto fique escondido antes */
+  border-right: .15em solid #f3dce2; /* A "barrinha" de digitar (cor rosa) */
+  white-space: nowrap; /* Impede que o texto pule de linha */
+  letter-spacing: .05em; /* Espaçamento sutil para o estilo digital */
+  
+  /* A animação: digita em 3s, espera 1s e pisca a barrinha */
+  animation: 
+    typing 3s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* Os "frames" da animação de digitação */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Os "frames" do cursor piscando */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #f3dce2; } /* Cor da barrinha rosa */
+}
+
+
+/* --- EFEITO DO CURSOR (CIRCULO ROSADO) --- */
+.cursor-follow {
+  position: fixed;
+  width: 40px; /* Tamanho do círculo */
+  height: 40px;
+  background-color: rgba(244, 114, 182, 0.2); /* Rosa pink-400 com transparência */
+  border: 1px solid rgba(244, 114, 182, 0.4); /* Contorno um pouco mais forte */
+  border-radius: 50%;
+  pointer-events: none; /* Importante: permite clicar nos botões "através" do círculo */
+  transform: translate(-50%, -50%); /* Centraliza o círculo na ponta do mouse */
+  transition: transform 0.1s ease-out; /* Deixa o movimento fluido */
+  z-index: 9999;
+  mix-blend-mode: multiply; /* Faz as cores interagirem de forma chique com o fundo */
+}
+
+/* Esconde o cursor padrão do Windows para dar destaque ao seu personalizado */
+body, a, button {
+  cursor: none !important;
+}
+
+/* --- ANIMAÇÃO DO TEXTO (DIGITAL TYPE) --- */
+.digital-type {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 2px solid #f472b6; /* Cursor piscante rosa */
+  white-space: nowrap;
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #f472b6; }
+}
+
+/* --- ESTILO EXTRA PARA O TÍTULO --- */
+h1 {
+  /* Garante que o contorno (stroke) seja suave em todos os navegadores */
+  -webkit-text-stroke: 1px #f472b6;
+  paint-order: stroke fill;
+}
