@@ -9,58 +9,55 @@ html {
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@700&display=swap');
 
 
-/* EFEITO DIGITAL (TYPING ANIMATION) */
+/*  ANIMAÇÃO DO TEXTO */
 .digital-type {
-  display: inline-block;
-  overflow: hidden; /* Garante que o texto fique escondido antes */
-  border-right: .15em solid #f3dce2; /* A "barrinha" de digitar (cor rosa) */
-  white-space: nowrap; /* Impede que o texto pule de linha */
-  letter-spacing: .05em; /* Espaçamento sutil para o estilo digital */
+  display: inline-block; 
+  overflow: hidden;
+  border-right: 2px solid #f472b6; 
+  white-space: nowrap;
+  vertical-align: middle; 
+  width: 280px; 
   
-  /* A animação: digita em 3s, espera 1s e pisca a barrinha */
   animation: 
-    typing 3s steps(40, end),
-    blink-caret .75s step-end infinite;
+    typing 3.5s steps(40, end),
+    blink-caret 0.75s step-end infinite;
 }
 
-/* Os "frames" da animação de digitação */
+
 @keyframes typing {
   from { width: 0 }
-  to { width: 100% }
+  to { width: 280px } 
 }
 
-/* Os "frames" do cursor piscando */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: #f3dce2; } /* Cor da barrinha rosa */
+  50% { border-color: #f472b6; }
 }
 
-
-/* --- EFEITO DO CURSOR (CIRCULO ROSADO) --- */
+/* EFEITO DO CURSOR */
 .cursor-follow {
   position: fixed;
-  width: 40px; /* Tamanho do círculo */
+  width: 40px; 
   height: 40px;
-  background-color: rgba(244, 114, 182, 0.2); /* Rosa pink-400 com transparência */
-  border: 1px solid rgba(244, 114, 182, 0.4); /* Contorno um pouco mais forte */
+  background-color: rgba(244, 114, 182, 0.2);
+  border: 1px solid rgba(244, 114, 182, 0.4); 
   border-radius: 50%;
-  pointer-events: none; /* Importante: permite clicar nos botões "através" do círculo */
-  transform: translate(-50%, -50%); /* Centraliza o círculo na ponta do mouse */
-  transition: transform 0.1s ease-out; /* Deixa o movimento fluido */
+  pointer-events: none; 
+  transform: translate(-50%, -50%); 
+  transition: transform 0.1s ease-out; 
   z-index: 9999;
-  mix-blend-mode: multiply; /* Faz as cores interagirem de forma chique com o fundo */
+  mix-blend-mode: multiply; 
 }
 
-/* Esconde o cursor padrão do Windows para dar destaque ao seu personalizado */
 body, a, button {
   cursor: none !important;
 }
 
-/* --- ANIMAÇÃO DO TEXTO (DIGITAL TYPE) --- */
+/*  ANIMAÇÃO DO TEXTO  */
 .digital-type {
   display: inline-block;
   overflow: hidden;
-  border-right: 2px solid #f472b6; /* Cursor piscante rosa */
+  border-right: 2px solid #f472b6; 
   white-space: nowrap;
   animation: 
     typing 3.5s steps(40, end),
@@ -77,9 +74,8 @@ body, a, button {
   50% { border-color: #f472b6; }
 }
 
-/* --- ESTILO EXTRA PARA O TÍTULO --- */
+/* ESTILO EXTRA PARA O TÍTULO */
 h1 {
-  /* Garante que o contorno (stroke) seja suave em todos os navegadores */
   -webkit-text-stroke: 1px #f472b6;
   paint-order: stroke fill;
 }
