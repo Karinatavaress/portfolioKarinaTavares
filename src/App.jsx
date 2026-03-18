@@ -42,7 +42,7 @@ function App() {
 </p>
 
           <div className="text-lg md:text-xl font-light text-slate-500 max-w-2xl mx-auto pt-10 leading-relaxed space-y-2">
-            <p>Eu sou uma <span className="font-semibold text-slate-800">graduanda em Gestão de TI</span> do Rio de Janeiro.</p>
+            <p>Eu sou uma <span className="font-semibold text-slate-800">estudante de Gestão de TI</span> do Rio de Janeiro.</p>
            <p className="text-center font-semibold text-pink-400 tracking-tight">
   <span className="digital-type">desenvolvedora front-end júnior</span>
 </p>
