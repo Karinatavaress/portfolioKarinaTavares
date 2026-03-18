@@ -16,13 +16,10 @@ function App() {
     <div className="min-h-screen bg-white font-montserrat text-slate-700 scroll-smooth relative">
       
       {/* CURSOR SEGUIDOR */}
-      <div 
-        className="cursor-follow"
-        style={{
-          left: `${mousePosition.x}px`,
-          top: `${mousePosition.y}px`
-        }}
-      />
+      <div
+  className="cursor-follow hidden md:block"
+  style={{ left: `${mousePosition.x}px`, top: `${mousePosition.y}px` }}
+/>
 
     <nav className="fixed top-0 left-0 w-full z-50 flex justify-center gap-8 py-4 bg-[#FFF0F5]/80 backdrop-blur-sm border-b border-pink-100">
   <a href="#sobre" className="font-montserrat text-xs font-semibold uppercase tracking-widest text-pink-300 hover:text-pink-500 transition-colors">Sobre</a>
@@ -40,7 +37,7 @@ function App() {
               Portfolio
             </h1>
           </div>
-          <p className="font-playfair text-xl md:text-2xl text-slate-800 tracking-tight">
+          <p className="font-playfair text-5xl sm:text-7xl md:text-9xl tracking-tighter uppercase text-transparent font-black leading-none">
             by Karina Tavares<span className="text-pink-400 font-bold">.</span>
           </p>
 
