@@ -53,6 +53,15 @@ body, a, button {
   cursor: none !important;
 }
 
+@media (max-width: 768px) {
+  body, a, button {
+    cursor: auto !important;
+  }
+  .cursor-follow {
+    display: none !important;
+  }
+}
+
 /*  ANIMAÇÃO DO TEXTO  */
 .digital-type {
   display: inline-block;
