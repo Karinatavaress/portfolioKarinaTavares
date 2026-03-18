@@ -24,6 +24,13 @@ function App() {
         }}
       />
 
+    <nav className="fixed top-0 left-0 w-full z-50 flex justify-center gap-8 py-4 bg-[#FFF0F5]/80 backdrop-blur-sm border-b border-pink-100">
+  <a href="#sobre" className="font-montserrat text-xs font-semibold uppercase tracking-widest text-pink-300 hover:text-pink-500 transition-colors">Sobre</a>
+  <a href="#habilidades" className="font-montserrat text-xs font-semibold uppercase tracking-widest text-pink-300 hover:text-pink-500 transition-colors">Habilidades</a>
+  <a href="#projetos" className="font-montserrat text-xs font-semibold uppercase tracking-widest text-pink-300 hover:text-pink-500 transition-colors">Projetos</a>
+  <a href="#contato" className="font-montserrat text-xs font-semibold uppercase tracking-widest text-pink-300 hover:text-pink-500 transition-colors">Contato</a>
+    </nav>
+
       {/* 1. HEADER HERO */}
       <header className="relative min-h-screen flex flex-col items-center justify-center px-8 bg-white text-center overflow-hidden">
         <div className="relative z-10 space-y-4">
@@ -39,19 +46,20 @@ function App() {
 
           <div className="text-lg md:text-xl font-light text-slate-500 max-w-2xl mx-auto pt-10 leading-relaxed space-y-2">
             <p>Eu sou uma <span className="font-semibold text-slate-800">graduanda em Gestão de TI</span> do Rio de Janeiro.</p>
-            <div className="flex items-baseline justify-center gap-2 font-semibold text-pink-400 tracking-tight">
-              <span className="digital-type">desenvolvedora front-end júnior</span>
-            </div>
+           <p className="text-center font-semibold text-pink-400 tracking-tight">
+  <span className="digital-type">desenvolvedora front-end júnior</span>
+</p>
           </div>
-        </div>
+            </div>
 
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-          <a href="#sobre" className="text-pink-300 hover:text-pink-400 transition-colors">
-            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </a>
-        </div>
+        <div className="pt-10">
+   <a
+    href="#projetos"
+    className="inline-block text-xs font-black uppercase tracking-[0.2em] bg-pink-400 text-white px-10 py-4 rounded-full hover:bg-pink-500 hover:scale-105 transition-all duration-300 shadow-lg shadow-pink-100"
+  >
+    Ver meus projetos ↓
+  </a>
+</div>
       </header>
 
       {/* BLOCO COLORIDO UNIFICADO */}
@@ -189,7 +197,7 @@ function App() {
 
 
 {/* 6. CONTATO */}
-<section id="contato" className="py-40 bg-[#FFF0F5] text-slate-900 border-t border-pink-100">
+<section id="contato" className="py-32 bg-[#FFF0F5] text-slate-900 border-t border-pink-100">
   <div className="max-w-5xl mx-auto px-8 text-center">
     <h2 className="font-playfair text-6xl md:text-7xl mb-12 text-pink-400 tracking-tight">
       Vamos criar algo?
@@ -215,24 +223,18 @@ function App() {
       </a>
 
       {/* BOTÃO CURRÍCULO */}
-      <a
-        href="/curriculo-karina-tavares.pdf"
-        download="Curriculo_Karina_Tavares.pdf"
-        className="text-xs font-black uppercase tracking-[0.2em] border-2 border-pink-200 text-pink-400 px-10 py-5 rounded-full hover:bg-white/50 transition-all duration-300 w-full md:w-auto text-center"
-      >
-        Currículo
-      </a>
-
-    </div>
-
-    {/* FRASE FINAL */}
-    <p className="mt-20 text-slate-400 font-light text-sm tracking-widest uppercase italic">
-      "Código é a ferramenta, mas a experiência do usuário é a missão." 🚀
-    </p>
+<a
+  href="https://www.canva.com/design/DAHEH_xqf48/agZirO3Li_1VAKokeSD1mQ/view?utm_content=DAHEH_xqf48&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd39e245e83"
+  target="_blank"
+  rel="noreferrer"
+  className="text-xs font-black uppercase tracking-[0.2em] border-2 border-pink-200 text-pink-400 px-10 py-5 rounded-full hover:bg-white/50 transition-all duration-300 w-full md:w-auto text-center"
+>
+  Currículo
+</a>
   </div>
-</section>
-
     </div>
+</section>
+      </div>
   );
 };
 
