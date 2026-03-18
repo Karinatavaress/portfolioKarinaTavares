@@ -29,10 +29,10 @@ function App() {
     </nav>
 
       {/* 1. HEADER HERO */}
-      <header className="relative min-h-screen flex flex-col items-center justify-center px-8 bg-white text-center overflow-hidden">
+      <header className="relative min-h-screen flex flex-col items-center justify-center px-4 bg-white text-center overflow-visible">
         <div className="relative z-10 space-y-4"/>
           <div className="relative inline-block">
-            <h1 className="font-playfair text-4xl sm:text-6xl md:text-9xl tracking-tight uppercase text-transparent font-black leading-none w-full"
+            <h1 className="font-playfair text-4xl sm:text-6xl md:text-9xl tracking-tight uppercase text-transparent font-black leading-none w-full text-center px-6"
     style={{ WebkitTextStroke: '1px #f472b6' }}>
   Portfolio
 </h1>
