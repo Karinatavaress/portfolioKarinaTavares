@@ -21,21 +21,24 @@ function App() {
   style={{ left: `${mousePosition.x}px`, top: `${mousePosition.y}px` }}
 />
 
-    <nav className="fixed top-0 left-0 w-full z-50 flex justify-center gap-8 py-4 bg-[#FFF0F5]/80 backdrop-blur-sm border-b border-pink-100">
-  <a href="#sobre" className="font-montserrat text-xs font-semibold uppercase tracking-widest text-pink-300 hover:text-pink-500 transition-colors">Sobre</a>
-  <a href="#habilidades" className="font-montserrat text-xs font-semibold uppercase tracking-widest text-pink-300 hover:text-pink-500 transition-colors">Habilidades</a>
-  <a href="#projetos" className="font-montserrat text-xs font-semibold uppercase tracking-widest text-pink-300 hover:text-pink-500 transition-colors">Projetos</a>
-  <a href="#contato" className="font-montserrat text-xs font-semibold uppercase tracking-widest text-pink-300 hover:text-pink-500 transition-colors">Contato</a>
+    <nav className="fixed top-0 left-0 w-full z-50 flex justify-center gap-4 py-3 bg-[#FFF0F5]/80 backdrop-blur-sm border-b border-pink-100">
+  <a href="#sobre" className="font-montserrat text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-pink-300 hover:text-pink-500 transition-colors">Sobre</a>
+  <a href="#habilidades" className="font-montserrat text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-pink-300 hover:text-pink-500 transition-colors">Habilidades</a>
+  <a href="#projetos" className="font-montserrat text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-pink-300 hover:text-pink-500 transition-colors">Projetos</a>
+  <a href="#contato" className="font-montserrat text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-pink-300 hover:text-pink-500 transition-colors">Contato</a>
     </nav>
 
       {/* 1. HEADER HERO */}
       <header className="relative min-h-screen flex flex-col items-center justify-center px-4 bg-white text-center overflow-visible">
-        <div className="relative z-10 space-y-4"/>
-          <div className="relative inline-block">
-            <h1 className="font-playfair text-4xl sm:text-6xl md:text-9xl tracking-tight uppercase text-transparent font-black leading-none w-full text-center px-6"
-    style={{ WebkitTextStroke: '1px #f472b6' }}>
-  Portfolio
-</h1>
+        <div className="relative z-10 space-y-4">
+          <div className="relative inline-block w-full text-center">
+  <h1
+    className="font-playfair text-[2.5rem] sm:text-6xl md:text-9xl tracking-tight uppercase text-transparent font-black leading-none px-8"
+    style={{ WebkitTextStroke: '1px #f472b6' }}
+  >
+    Portfolio
+  </h1>
+</div>
 
 <p className="font-playfair text-xl md:text-2xl text-slate-800 tracking-tight">
   by Karina Tavares<span className="text-pink-400 font-bold">.</span>
