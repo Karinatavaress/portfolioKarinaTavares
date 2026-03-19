@@ -33,7 +33,7 @@ function App() {
         <div className="relative z-10 space-y-4">
           <div className="relative inline-block w-full text-center">
   <h1
-  className="font-montserrat md:font-playfair text-3xl sm:text-5xl md:text-9xl tracking-tight uppercase text-transparent font-black leading-none px-8"
+  className="titulo-portfolio font-playfair text-3xl sm:text-5xl md:text-9xl tracking-tight uppercase text-transparent font-black leading-none px-8"
   style={{ WebkitTextStroke: '1px #f472b6' }}
 >
   Portfolio

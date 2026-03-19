@@ -62,6 +62,14 @@ body, a, button {
   }
 }
 
+@media (max-width: 767px) {
+  .titulo-portfolio {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 2rem !important;
+    letter-spacing: 0.05em !important;
+  }
+}
+
 /*  ANIMAÇÃO DO TEXTO  */
 .digital-type {
   display: inline-block;
